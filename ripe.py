@@ -1,10 +1,18 @@
+# --------------------------------------------------------------------------
+# This code is a part of a Bachelor Thesis written by Osama Al-Wardi.
+#
+# Please refer to the repository https://github.com/OsamaAl-Wardi/SDDSpider
+# for the latest version of SDDSpider.
+#
+# May 2020, Osama Al-Wardi, Bermen, Germany
+# For question, please email osamaalwardi@yahoo.com
+# --------------------------------------------------------------------------
 import requests
 import socket
 import pprint
 import json
 from urllib.parse import urlparse
 from colorama import Style, Fore, init
-
 
 def ripe_lookup(base_url, output_dir = 'data/', verbose = True):
     base_url = urlparse(base_url)[1]

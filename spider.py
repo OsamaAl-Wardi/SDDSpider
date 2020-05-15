@@ -1,3 +1,12 @@
+# --------------------------------------------------------------------------
+# This code is a part of a Bachelor Thesis written by Osama Al-Wardi.
+#
+# Please refer to the repository https://github.com/OsamaAl-Wardi/SDDSpider
+# for the latest version of SDDSpider.
+#
+# May 2020, Osama Al-Wardi, Bermen, Germany
+# For question, please email osamaalwardi@yahoo.com
+# --------------------------------------------------------------------------
 import os
 import json
 import pprint

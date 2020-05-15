@@ -1,7 +1,15 @@
+# --------------------------------------------------------------------------
+# This code is a part of a Bachelor Thesis written by Osama Al-Wardi.
+#
+# Please refer to the repository https://github.com/OsamaAl-Wardi/SDDSpider
+# for the latest version of SDDSpider.
+#
+# May 2020, Osama Al-Wardi, Bermen, Germany
+# For question, please email osamaalwardi@yahoo.com
+# --------------------------------------------------------------------------
 import json
 from graphviz import Digraph, Graph
 from colorama import Style, Fore, init
-
 
 def spiderweb(output_dir = 'data/', verbose = True):
     dot = Digraph(comment='Spider Web', node_attr={'color': 'lightblue2', 'style': 'filled'})
