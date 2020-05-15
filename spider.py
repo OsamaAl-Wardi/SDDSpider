@@ -67,8 +67,6 @@ def spider(base_url, output_dir = 'data/', verbose = True):
             pass
         
     browser.quit()
-    #pprint.pprint(pages)
-    #pprint.pprint(spiderweb)
     pages = json.dumps(pages)
     
     print (Style.BRIGHT + Fore.GREEN + '[+] Saving the Captured Browsing Info in ' + output_dir + 'spiderweb.json')
@@ -98,7 +96,6 @@ def parse_urls(base_url, output_dir = '/data'):
     
     # Parsing the base URL
     base_url = urlparse(base_url)[1]
-    #print (base_url)
     
     for page in resources:
         print (Style.BRIGHT + Fore.GREEN + '[+] Parsing Captured URLs for page ' + page)
@@ -118,9 +115,3 @@ def parse_urls(base_url, output_dir = '/data'):
     print (Style.BRIGHT + Fore.GREEN + '[+] Saving the Parsing Info in ' + output_dir + 'results.json')
     with open(output_dir + 'results.json', 'w') as file:
         json.dump(results, file)
-
-
-#pages = spider('www.youtube.com')
-#parse_urls('https://imgur.com/t/coronavirus')
-#pages = spider('https://imgur.com/t/coronavirus')
-#pages = spider('http://quotes.toscrape.com/')

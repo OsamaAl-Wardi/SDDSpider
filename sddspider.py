@@ -65,7 +65,6 @@ def main():
   required.add_argument("-u", "--url", help="target url including http/https", type=str, required=True)
   parser.add_argument("-o", "--out", help="output directory path", type=str, default='data/')
   parser.add_argument("-v", "--verbose", help="increase output verbosity", action="store_true", default= False)
-  parser.add_argument("-g", "--graph", help="display the dependency graphs", action="store_true", default= False)
   args = parser.parse_args()
 
   print (args.url)

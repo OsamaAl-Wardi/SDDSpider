@@ -27,5 +27,3 @@ def capture_requests(output_dir = '/data', verbose = True):
         json.dump(data, file)
 
     return data
-
-#requestor()
